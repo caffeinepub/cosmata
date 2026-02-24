@@ -1,0 +1,318 @@
+{
+  "kind": "build_request",
+  "title": "Build Cosmata premium skincare e-commerce website",
+  "projectName": "Cosmata Skincare",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a sticky header with Cosmata logo on the left, navigation menu (Home, Shop, About, Blog, Contact), and icon group on the right (search, account, cart). Use soft beige (#F5EFE8), white, and subtle gold accents (#C9A96E). Implement sticky scroll behavior.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Sticky Header: Logo on left (Cosmata), Menu: Home, Shop, About, Blog, Contact, Search icon, Account icon, Cart icon"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header remains fixed at top during scroll",
+        "Navigation links are clickable and functional",
+        "Search, account, and cart icons are visible and interactive",
+        "Color scheme matches brand palette: beige #F5EFE8, white, gold #C9A96E"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build hero section with left-aligned text: headline 'Glow Naturally. Clinically Proven.', subtext 'Reveal your healthiest skin with Cosmata's science-backed skincare solutions.', primary CTA 'Shop Now', and secondary CTA 'Explore Collection'. Right side displays premium product image. Use modern serif font for headings and clean sans-serif for body text.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Headline: 'Glow Naturally. Clinically Proven.', Subtext: 'Reveal your healthiest skin with Cosmata's science-backed skincare solutions.', Primary CTA button: Shop Now, Secondary CTA button: Explore Collection"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section spans full viewport width",
+        "Text content matches exactly as specified",
+        "Both CTA buttons are styled distinctly (primary vs secondary)",
+        "Layout is responsive with text stacking above image on mobile",
+        "Typography uses serif for headings and sans-serif for body"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add trust badge section with 3 horizontally aligned icons and labels: 'Dermatologically Tested', '100% Safe Ingredients', '24/7 Customer Support'. Use minimal rounded design with soft shadows.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "3 icons horizontally: - Dermatologically Tested - 100% Safe Ingredients - 24/7 Customer Support"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three trust badges displayed in a horizontal row",
+        "Each badge has an icon and descriptive text",
+        "Badges are evenly spaced and centered",
+        "Responsive layout stacks badges vertically on mobile"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create 'Shop by Category' section with 4 category cards: Serum, Cleanser, Moisturizer, Face Wash. Each card should have minimal rounded design with elegant product imagery, using soft shadows and rounded corners.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "4 category cards: Serum, Cleanser, Moisturizer, Face Wash, Minimal rounded cards with elegant product images"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Four category cards displayed in a grid",
+        "Each card is clickable and navigates to category page",
+        "Cards have rounded corners and soft shadows",
+        "Grid is responsive (4 columns desktop, 2 on tablet, 1 on mobile)"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Build best sellers product grid with 4 products per row on desktop. Each product card includes: product image, product name, short benefit line, price, and 'Add to Cart' button. Add 'Best Seller' urgency tag. Implement hover effects on buttons.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Grid layout (4 products per row desktop), Each product card: Product image, Product name, Short benefit line, Price, Add to Cart button",
+          "Add urgency tag on best sellers: 'Best Seller'"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Product grid displays 4 products per row on desktop",
+        "Each card shows all required information",
+        "'Best Seller' tag is visually prominent",
+        "Add to Cart button has hover effect",
+        "Grid is responsive (adjusts to 2 columns on tablet, 1 on mobile)",
+        "Clicking 'Add to Cart' adds product to cart state"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create ingredient highlight section with split layout: left side shows close-up skin texture image, right side displays benefits of Vitamin C, Kojic Acid, and Niacinamide with short scientific explanations in simple English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Split layout: Left: Close-up skin texture image, Right: Benefits of Vitamin C, Kojic Acid, Niacinamide, Short scientific explanations in simple English"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section uses a two-column split layout",
+        "Left column displays skin texture image",
+        "Right column lists three ingredients with benefits",
+        "Text is clear, simple, and scientifically accurate without medical claims",
+        "Layout stacks vertically on mobile"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add before & after section with image comparison slider showing realistic acne-to-clear skin results. Include disclaimer text: 'Results may vary'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Image comparison slider, Realistic acne-to-clear skin result, Add disclaimer: 'Results may vary'"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Interactive slider allows user to compare before/after images",
+        "Images show realistic skin improvement",
+        "Disclaimer 'Results may vary' is clearly visible",
+        "Slider is touch-friendly on mobile devices"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Build testimonials section with 3 customer review cards. Each card includes 5-star rating and short genuine review text. Use clean minimal card design with soft shadows.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "3 customer review cards, 5-star ratings, Short genuine review text"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three testimonial cards displayed horizontally",
+        "Each card shows star rating (5 stars)",
+        "Review text is concise and readable",
+        "Cards use minimal design with soft shadows",
+        "Layout is responsive (stacks vertically on mobile)"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Create blog preview section with 3 skincare tips article cards. Use clean minimal card design consistent with site aesthetic.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "3 skincare tips articles preview, Clean minimal cards"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three blog article preview cards displayed",
+        "Each card includes article title and excerpt",
+        "Cards are clickable and link to full articles",
+        "Design matches minimal aesthetic with rounded corners",
+        "Responsive layout (3 columns desktop, 1 column mobile)"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Build footer with newsletter signup form, quick links section, social media icons, contact details, and secure payment icons. Use brand color palette and maintain premium minimal aesthetic.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Newsletter signup, Quick links, Social icons, Contact details, Secure payment icons"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Newsletter signup has email input field and submit button",
+        "Quick links include all main navigation items",
+        "Social media icons are visible and link to platforms",
+        "Contact information is clearly displayed",
+        "Payment icons (Visa, Mastercard, etc.) are shown",
+        "Footer layout is organized and responsive"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Implement cart functionality: users can add products to cart, view cart contents, update quantities, and proceed to checkout. Store cart state globally.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Enable cart and checkout functionality"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Add to Cart button adds product to cart state",
+        "Cart icon shows item count badge",
+        "Cart page displays all added products",
+        "Users can update product quantities or remove items",
+        "Cart persists across page navigation",
+        "Checkout button navigates to checkout flow"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Ensure fully responsive design with mobile-first optimization. Implement smooth scroll behavior and hover effects on all interactive elements (buttons, cards, links).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Fully responsive design, Mobile-first optimization, Smooth scroll, Hover effects on buttons"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All sections render correctly on mobile, tablet, and desktop",
+        "Mobile layout prioritizes vertical stacking and readability",
+        "Smooth scroll is enabled for anchor links",
+        "Buttons and interactive elements have visible hover states",
+        "Touch targets are appropriately sized for mobile (minimum 44px)"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Create backend product catalog with at least 8 sample products across 4 categories (Serum, Cleanser, Moisturizer, Face Wash). Each product includes: name, category, benefit description, price, image reference, and isBestSeller flag.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores product data with all required fields",
+        "Products are organized by category",
+        "At least 2 products per category",
+        "Best seller flags are set for featured products",
+        "Frontend can query and display all products"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Apply consistent brand design system throughout: soft beige (#F5EFE8) backgrounds, white content areas, subtle gold accents (#C9A96E), rounded corners, soft shadows, strong white space, and premium minimal aesthetic. Use modern serif font for headings and clean sans-serif for body text.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Use soft beige (#F5EFE8), white, and subtle gold accents (#C9A96E)",
+          "Clean layout with strong white space",
+          "Modern serif font for headings and clean sans-serif for body text",
+          "Rounded corners and soft shadows",
+          "Very premium, not cluttered"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color palette is consistently applied: beige #F5EFE8, white, gold #C9A96E",
+        "Typography hierarchy uses serif for headings, sans-serif for body",
+        "All components use rounded corners and soft shadows",
+        "White space is generous and layout feels uncluttered",
+        "Overall aesthetic feels premium, clinical, and minimal"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use only Motoko for backend logic in a single-actor architecture",
+    "Frontend must use React with TypeScript, Tailwind CSS, and React Query",
+    "Do not modify immutable frontend paths: useInternetIdentity.ts/tsx, useActor.ts, main.tsx, components/ui",
+    "Avoid medical claims; keep product descriptions scientifically accurate but simple",
+    "Maintain premium, minimal, clinical aesthetic throughout"
+  ],
+  "nonGoals": [
+    "Integration with third-party payment processors (use placeholder checkout)",
+    "Real-time inventory management",
+    "User reviews submission system",
+    "Blog content management system (use static sample articles)",
+    "Email newsletter backend integration (placeholder signup form)",
+    "Advanced search and filtering (basic category filtering is sufficient)",
+    "User account creation and order history"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Premium hero image showing glowing Indian woman with skincare serum bottles in soft luxury lighting, minimal clinical aesthetic (hero.dim_1920x1080.png)",
+      "Close-up skin texture image showing healthy glowing skin for ingredient section (skin-texture.dim_800x600.png)",
+      "Before acne skin photo for comparison slider, realistic clinical photography (before-acne.dim_600x800.png)",
+      "After clear skin photo for comparison slider, same subject as before photo, realistic result (after-clear.dim_600x800.png)",
+      "Minimal serum bottle product image on white background with soft shadow (product-serum.dim_400x400.png)",
+      "Minimal cleanser bottle product image on white background with soft shadow (product-cleanser.dim_400x400.png)",
+      "Minimal moisturizer jar product image on white background with soft shadow (product-moisturizer.dim_400x400.png)",
+      "Minimal face wash tube product image on white background with soft shadow (product-facewash.dim_400x400.png)"
+    ],
+    "edits": []
+  }
+}

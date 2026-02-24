@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Premium skincare e-commerce website for Cosmata brand - science-backed, dermatologically tested skincare focused on glowing, healthy skin with a minimal, luxury, clinical aesthetic targeting women aged 18-35 in India",
+  "architectural_notes": [
+    "Design system: soft beige (#F5EFE8), white, subtle gold accents (#C9A96E) with rounded corners and soft shadows",
+    "Typography: modern serif for headings, clean sans-serif for body text",
+    "Content tone: confident but clean, premium simple English, no exaggerated medical claims, conversion-focused"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Premium hero image showing glowing Indian woman with skincare serum bottles in soft luxury lighting, minimal clinical aesthetic (hero.dim_1920x1080.png)\n- Close-up skin texture image showing healthy glowing skin for ingredient section (skin-texture.dim_800x600.png)\n- Before acne skin photo for comparison slider, realistic clinical photography (before-acne.dim_600x800.png)\n- After clear skin photo for comparison slider, same subject as before photo, realistic result (after-clear.dim_600x800.png)\n- Minimal serum bottle product image on white background with soft shadow (product-serum.dim_400x400.png)\n- Minimal cleanser bottle product image on white background with soft shadow (product-cleanser.dim_400x400.png)\n- Minimal moisturizer jar product image on white background with soft shadow (product-moisturizer.dim_400x400.png)\n- Minimal face wash tube product image on white background with soft shadow (product-facewash.dim_400x400.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-sticky-header-with-cosmata-logo-on-the-left-navigation-menu-home-shop-about-blog-contact-and-icon-group-on-the-right-search-account-cart-use-soft-beige-f5efe8-white-and-subtle-gold-accents-c9a96e-implement-sticky-scroll-behavior",
+      "title": "Create a sticky header with Cosmata logo on the left, navigation menu (Home, Shop, About, Blog, Contact), and icon group on the right (search, account, cart). Use soft beige (#F5EFE8), white, and subtle gold accents (#C9A96E). Implement sticky scroll behavior.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-hero-section-with-left-aligned-text-headline-glow-naturally-clinically-proven-subtext-reveal-your-healthiest-skin-with-cosmata-s-science-backed-skincare-solutions-primary-cta-shop-now-and-secondary-cta-explore-collection-right-side-displays-premium-product-image-use-modern-serif-font-for-headings-and-clean-sans-serif-for-body-text",
+      "title": "Build hero section with left-aligned text: headline 'Glow Naturally. Clinically Proven.', subtext 'Reveal your healthiest skin with Cosmata's science-backed skincare solutions.', primary CTA 'Shop Now', and secondary CTA 'Explore Collection'. Right side displays premium product image. Use modern serif font for headings and clean sans-serif for body text.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-trust-badge-section-with-3-horizontally-aligned-icons-and-labels-dermatologically-tested-100-safe-ingredients-24-7-customer-support-use-minimal-rounded-design-with-soft-shadows",
+      "title": "Add trust badge section with 3 horizontally aligned icons and labels: 'Dermatologically Tested', '100% Safe Ingredients', '24/7 Customer Support'. Use minimal rounded design with soft shadows.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-shop-by-category-section-with-4-category-cards-serum-cleanser-moisturizer-face-wash-each-card-should-have-minimal-rounded-design-with-elegant-product-imagery-using-soft-shadows-and-rounded-corners",
+      "title": "Create 'Shop by Category' section with 4 category cards: Serum, Cleanser, Moisturizer, Face Wash. Each card should have minimal rounded design with elegant product imagery, using soft shadows and rounded corners.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-best-sellers-product-grid-with-4-products-per-row-on-desktop-each-product-card-includes-product-image-product-name-short-benefit-line-price-and-add-to-cart-button-add-best-seller-urgency-tag-implement-hover-effects-on-buttons",
+      "title": "Build best sellers product grid with 4 products per row on desktop. Each product card includes: product image, product name, short benefit line, price, and 'Add to Cart' button. Add 'Best Seller' urgency tag. Implement hover effects on buttons.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-ingredient-highlight-section-with-split-layout-left-side-shows-close-up-skin-texture-image-right-side-displays-benefits-of-vitamin-c-kojic-acid-and-niacinamide-with-short-scientific-explanations-in-simple-english",
+      "title": "Create ingredient highlight section with split layout: left side shows close-up skin texture image, right side displays benefits of Vitamin C, Kojic Acid, and Niacinamide with short scientific explanations in simple English.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-before-after-section-with-image-comparison-slider-showing-realistic-acne-to-clear-skin-results-include-disclaimer-text-results-may-vary",
+      "title": "Add before & after section with image comparison slider showing realistic acne-to-clear skin results. Include disclaimer text: 'Results may vary'.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-testimonials-section-with-3-customer-review-cards-each-card-includes-5-star-rating-and-short-genuine-review-text-use-clean-minimal-card-design-with-soft-shadows",
+      "title": "Build testimonials section with 3 customer review cards. Each card includes 5-star rating and short genuine review text. Use clean minimal card design with soft shadows.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-blog-preview-section-with-3-skincare-tips-article-cards-use-clean-minimal-card-design-consistent-with-site-aesthetic",
+      "title": "Create blog preview section with 3 skincare tips article cards. Use clean minimal card design consistent with site aesthetic.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-footer-with-newsletter-signup-form-quick-links-section-social-media-icons-contact-details-and-secure-payment-icons-use-brand-color-palette-and-maintain-premium-minimal-aesthetic",
+      "title": "Build footer with newsletter signup form, quick links section, social media icons, contact details, and secure payment icons. Use brand color palette and maintain premium minimal aesthetic.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-cart-functionality-users-can-add-products-to-cart-view-cart-contents-update-quantities-and-proceed-to-checkout-store-cart-state-globally",
+      "title": "Implement cart functionality: users can add products to cart, view cart contents, update quantities, and proceed to checkout. Store cart state globally.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-fully-responsive-design-with-mobile-first-optimization-implement-smooth-scroll-behavior-and-hover-effects-on-all-interactive-elements-buttons-cards-links",
+      "title": "Ensure fully responsive design with mobile-first optimization. Implement smooth scroll behavior and hover effects on all interactive elements (buttons, cards, links).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-consistent-brand-design-system-throughout-soft-beige-f5efe8-backgrounds-white-content-areas-subtle-gold-accents-c9a96e-rounded-corners-soft-shadows-strong-white-space-and-premium-minimal-aesthetic-use-modern-serif-font-for-headings-and-clean-sans-serif-for-body-text",
+      "title": "Apply consistent brand design system throughout: soft beige (#F5EFE8) backgrounds, white content areas, subtle gold accents (#C9A96E), rounded corners, soft shadows, strong white space, and premium minimal aesthetic. Use modern serif font for headings and clean sans-serif for body text.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Sticky header with logo, navigation menu (Home, Shop, About, Blog, Contact), search/account/cart icons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Hero section with headline, subtext, dual CTAs (Shop Now, Explore Collection), and premium product image",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Trust badge section with 3 icons: Dermatologically Tested, 100% Safe Ingredients, 24/7 Customer Support",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Shop by category section with 4 category cards: Serum, Cleanser, Moisturizer, Face Wash",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Best sellers product grid (4 per row) with product cards showing image, name, benefit, price, and Add to Cart button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Ingredient highlight section with split layout showcasing Vitamin C, Kojic Acid, Niacinamide benefits",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Before & After section with image comparison slider and disclaimer",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Testimonials section with 3 customer review cards including 5-star ratings",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Blog preview section with 3 skincare tips article cards",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Footer with newsletter signup, quick links, social icons, contact details, and secure payment icons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Fully responsive design with mobile-first optimization, smooth scroll, and hover effects",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Cart and checkout functionality with urgency tags on best sellers",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-25",
+      "summary": "Create backend product catalog with at least 8 sample products across 4 categories (Serum, Cleanser, Moisturizer, Face Wash). Each product includes: name, category, benefit description, price, image reference, and isBestSeller flag.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Cosmata",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,246 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-sticky-header-with-cosmata-logo-on-the-left-navigation-menu-home-shop-about-blog-contact-and-icon-group-on-the-right-search-account-cart-use-soft-beige-f5efe8-white-and-subtle-gold-accents-c9a96e-implement-sticky-scroll-behavior",
+      "featureTitle": "Create a sticky header with Cosmata logo on the left, navigation menu (Home, Shop, About, Blog, Contact), and icon group on the right (search, account, cart). Use soft beige (#F5EFE8), white, and subtle gold accents (#C9A96E). Implement sticky scroll behavior.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-hero-section-with-left-aligned-text-headline-glow-naturally-clinically-proven-subtext-reveal-your-healthiest-skin-with-cosmata-s-science-backed-skincare-solutions-primary-cta-shop-now-and-secondary-cta-explore-collection-right-side-displays-premium-product-image-use-modern-serif-font-for-headings-and-clean-sans-serif-for-body-text",
+      "featureTitle": "Build hero section with left-aligned text: headline 'Glow Naturally. Clinically Proven.', subtext 'Reveal your healthiest skin with Cosmata's science-backed skincare solutions.', primary CTA 'Shop Now', and secondary CTA 'Explore Collection'. Right side displays premium product image. Use modern serif font for headings and clean sans-serif for body text.",
+      "files": [
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-trust-badge-section-with-3-horizontally-aligned-icons-and-labels-dermatologically-tested-100-safe-ingredients-24-7-customer-support-use-minimal-rounded-design-with-soft-shadows",
+      "featureTitle": "Add trust badge section with 3 horizontally aligned icons and labels: 'Dermatologically Tested', '100% Safe Ingredients', '24/7 Customer Support'. Use minimal rounded design with soft shadows.",
+      "files": [
+        "frontend/src/components/TrustBadges.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-shop-by-category-section-with-4-category-cards-serum-cleanser-moisturizer-face-wash-each-card-should-have-minimal-rounded-design-with-elegant-product-imagery-using-soft-shadows-and-rounded-corners",
+      "featureTitle": "Create 'Shop by Category' section with 4 category cards: Serum, Cleanser, Moisturizer, Face Wash. Each card should have minimal rounded design with elegant product imagery, using soft shadows and rounded corners.",
+      "files": [
+        "frontend/src/components/ShopByCategory.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-best-sellers-product-grid-with-4-products-per-row-on-desktop-each-product-card-includes-product-image-product-name-short-benefit-line-price-and-add-to-cart-button-add-best-seller-urgency-tag-implement-hover-effects-on-buttons",
+      "featureTitle": "Build best sellers product grid with 4 products per row on desktop. Each product card includes: product image, product name, short benefit line, price, and 'Add to Cart' button. Add 'Best Seller' urgency tag. Implement hover effects on buttons.",
+      "files": [
+        "frontend/src/components/BestSellers.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-ingredient-highlight-section-with-split-layout-left-side-shows-close-up-skin-texture-image-right-side-displays-benefits-of-vitamin-c-kojic-acid-and-niacinamide-with-short-scientific-explanations-in-simple-english",
+      "featureTitle": "Create ingredient highlight section with split layout: left side shows close-up skin texture image, right side displays benefits of Vitamin C, Kojic Acid, and Niacinamide with short scientific explanations in simple English.",
+      "files": [
+        "frontend/src/components/IngredientHighlight.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-before-after-section-with-image-comparison-slider-showing-realistic-acne-to-clear-skin-results-include-disclaimer-text-results-may-vary",
+      "featureTitle": "Add before & after section with image comparison slider showing realistic acne-to-clear skin results. Include disclaimer text: 'Results may vary'.",
+      "files": [
+        "frontend/src/components/BeforeAfter.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-testimonials-section-with-3-customer-review-cards-each-card-includes-5-star-rating-and-short-genuine-review-text-use-clean-minimal-card-design-with-soft-shadows",
+      "featureTitle": "Build testimonials section with 3 customer review cards. Each card includes 5-star rating and short genuine review text. Use clean minimal card design with soft shadows.",
+      "files": [
+        "frontend/src/components/Testimonials.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-blog-preview-section-with-3-skincare-tips-article-cards-use-clean-minimal-card-design-consistent-with-site-aesthetic",
+      "featureTitle": "Create blog preview section with 3 skincare tips article cards. Use clean minimal card design consistent with site aesthetic.",
+      "files": [
+        "frontend/src/components/BlogPreview.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-footer-with-newsletter-signup-form-quick-links-section-social-media-icons-contact-details-and-secure-payment-icons-use-brand-color-palette-and-maintain-premium-minimal-aesthetic",
+      "featureTitle": "Build footer with newsletter signup form, quick links section, social media icons, contact details, and secure payment icons. Use brand color palette and maintain premium minimal aesthetic.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-cart-functionality-users-can-add-products-to-cart-view-cart-contents-update-quantities-and-proceed-to-checkout-store-cart-state-globally",
+      "featureTitle": "Implement cart functionality: users can add products to cart, view cart contents, update quantities, and proceed to checkout. Store cart state globally.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/CartPage.tsx",
+        "frontend/src/pages/CheckoutPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-fully-responsive-design-with-mobile-first-optimization-implement-smooth-scroll-behavior-and-hover-effects-on-all-interactive-elements-buttons-cards-links",
+      "featureTitle": "Ensure fully responsive design with mobile-first optimization. Implement smooth scroll behavior and hover effects on all interactive elements (buttons, cards, links).",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-consistent-brand-design-system-throughout-soft-beige-f5efe8-backgrounds-white-content-areas-subtle-gold-accents-c9a96e-rounded-corners-soft-shadows-strong-white-space-and-premium-minimal-aesthetic-use-modern-serif-font-for-headings-and-clean-sans-serif-for-body-text",
+      "featureTitle": "Apply consistent brand design system throughout: soft beige (#F5EFE8) backgrounds, white content areas, subtle gold accents (#C9A96E), rounded corners, soft shadows, strong white space, and premium minimal aesthetic. Use modern serif font for headings and clean sans-serif for body text.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

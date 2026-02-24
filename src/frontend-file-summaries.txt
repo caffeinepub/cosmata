@@ -1,0 +1,21 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining routes for home, shop, cart, and checkout pages with a shared layout including header and footer.",
+  "frontend/src/pages/HomePage.tsx": "Homepage component that composes all main sections including hero, trust badges, categories, best sellers, ingredients, before/after, testimonials, and blog preview.",
+  "frontend/src/pages/ShopPage.tsx": "Shop page displaying all products in a responsive grid with loading states and product cards.",
+  "frontend/src/pages/CartPage.tsx": "Shopping cart page showing cart items, quantities, total price, and options to clear cart or proceed to checkout.",
+  "frontend/src/pages/CheckoutPage.tsx": "Checkout page with shipping information form and order summary, displaying success message after order placement.",
+  "frontend/src/components/Header.tsx": "Sticky header component with Cosmata logo, navigation menu, search/account/cart icons, and mobile menu with cart item count badge.",
+  "frontend/src/components/Footer.tsx": "Footer component with newsletter signup, quick links, social media icons, contact details, payment icons, and Caffeine.ai attribution.",
+  "frontend/src/components/HeroSection.tsx": "Hero section with headline, subtext, dual CTAs, and premium product image in a responsive two-column layout.",
+  "frontend/src/components/TrustBadges.tsx": "Trust badges section displaying three horizontally aligned badges for dermatologically tested, safe ingredients, and customer support.",
+  "frontend/src/components/ShopByCategory.tsx": "Category grid component showing four clickable category cards (Serum, Cleanser, Moisturizer, Face Wash) with product images.",
+  "frontend/src/components/BestSellers.tsx": "Best sellers section fetching and displaying featured products in a responsive grid with loading states.",
+  "frontend/src/components/ProductCard.tsx": "Reusable product card component displaying product details, price, best seller badge, and add to cart functionality.",
+  "frontend/src/components/IngredientHighlight.tsx": "Split layout section showcasing key ingredients (Vitamin C, Kojic Acid, Niacinamide) with benefits and skin texture image.",
+  "frontend/src/components/BeforeAfter.tsx": "Interactive before/after image comparison slider with draggable control and disclaimer text.",
+  "frontend/src/components/Testimonials.tsx": "Testimonials section displaying three customer review cards with 5-star ratings and review text.",
+  "frontend/src/components/BlogPreview.tsx": "Blog preview section showing three skincare article cards with titles, excerpts, and emoji icons.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for fetching best sellers, all products, cart data, and mutations for adding to cart and clearing cart with toast notifications.",
+  "frontend/src/index.css": "Global styles with Cosmata brand colors (beige, gold), Playfair Display serif and Inter sans-serif fonts, smooth scroll behavior, and custom slider styles.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Cosmata brand colors (beige, gold), custom font families (Playfair Display, Inter), extended border radius, and soft shadow utilities."
+}

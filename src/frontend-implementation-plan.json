@@ -1,0 +1,280 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Cosmata Premium Skincare E-commerce Website - Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create sticky header with Cosmata logo, navigation menu, and icon group",
+      "acceptanceCriteria": [
+        "Header remains fixed at top during scroll",
+        "Navigation links are clickable and functional",
+        "Search, account, and cart icons are visible and interactive",
+        "Color scheme matches brand palette: beige #F5EFE8, white, gold #C9A96E"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "create",
+          "description": "Create sticky header component with Cosmata logo on left, navigation menu (Home, Shop, About, Blog, Contact) in center, and icon group (search, account, cart with badge) on right. Implement sticky scroll behavior using Tailwind classes. Apply brand colors: soft beige #F5EFE8, white, gold #C9A96E. Cart icon displays item count badge from cart state."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Header component at the top of the application layout. Ensure header appears on all pages."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build hero section with headline, CTAs, and premium product image",
+      "acceptanceCriteria": [
+        "Hero section spans full viewport width",
+        "Text content matches exactly as specified",
+        "Both CTA buttons are styled distinctly (primary vs secondary)",
+        "Layout is responsive with text stacking above image on mobile",
+        "Typography uses serif for headings and sans-serif for body"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create hero section with left-aligned text content and right-side product image. Include headline 'Glow Naturally. Clinically Proven.', subtext 'Reveal your healthiest skin with Cosmata's science-backed skincare solutions.', primary CTA button 'Shop Now' linking to shop page, and secondary CTA button 'Explore Collection'. Use generated hero image from frontend/public/assets/generated/hero.dim_1920x1080.png. Apply modern serif font for headline and sans-serif for body text. Implement responsive layout that stacks vertically on mobile."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "create",
+          "description": "Create main homepage that composes all homepage sections: HeroSection, TrustBadges, ShopByCategory, BestSellers, IngredientHighlight, BeforeAfter, Testimonials, and BlogPreview components."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add trust badge section with three horizontal icons and labels",
+      "acceptanceCriteria": [
+        "Three trust badges displayed in a horizontal row",
+        "Each badge has an icon and descriptive text",
+        "Badges are evenly spaced and centered",
+        "Responsive layout stacks badges vertically on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TrustBadges.tsx",
+          "operation": "create",
+          "description": "Create trust badges section with three horizontally aligned badges: 'Dermatologically Tested', '100% Safe Ingredients', '24/7 Customer Support'. Use icon placeholders (or simple SVG icons) with minimal rounded design and soft shadows. Implement responsive grid that stacks vertically on mobile."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create Shop by Category section with four category cards",
+      "acceptanceCriteria": [
+        "Four category cards displayed in a grid",
+        "Each card is clickable and navigates to category page",
+        "Cards have rounded corners and soft shadows",
+        "Grid is responsive (4 columns desktop, 2 on tablet, 1 on mobile)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ShopByCategory.tsx",
+          "operation": "create",
+          "description": "Create category grid with four cards: Serum, Cleanser, Moisturizer, Face Wash. Each card displays generated product images from frontend/public/assets/generated/ (product-serum.dim_400x400.png, product-cleanser.dim_400x400.png, product-moisturizer.dim_400x400.png, product-facewash.dim_400x400.png). Cards are clickable and navigate to Shop page with category filter. Apply minimal rounded design with soft shadows. Implement responsive grid (4 columns desktop, 2 tablet, 1 mobile)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Build best sellers product grid with Add to Cart functionality",
+      "acceptanceCriteria": [
+        "Product grid displays 4 products per row on desktop",
+        "Each card shows all required information",
+        "'Best Seller' tag is visually prominent",
+        "Add to Cart button has hover effect",
+        "Grid is responsive (adjusts to 2 columns on tablet, 1 on mobile)",
+        "Clicking 'Add to Cart' adds product to cart state"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/BestSellers.tsx",
+          "operation": "create",
+          "description": "Create best sellers grid that fetches products using getBestSellers() from backend interface. Display product cards in 4-column grid (desktop) with product image, name, benefit description, price, and 'Add to Cart' button. Show 'Best Seller' urgency tag on cards. Implement hover effects on buttons. Call addToCart() backend function when user clicks 'Add to Cart'. Responsive grid adjusts to 2 columns (tablet) and 1 column (mobile)."
+        },
+        {
+          "path": "frontend/src/hooks/useCart.ts",
+          "operation": "create",
+          "description": "Create custom hook that manages cart state using React Query. Provides functions to fetch cart (getCart()), add items (addToCart()), and clear cart (clearCart()) by calling backend interface methods. Returns cart data including items array and total, plus mutation functions for cart operations."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Create ingredient highlight section with split layout",
+      "acceptanceCriteria": [
+        "Section uses a two-column split layout",
+        "Left column displays skin texture image",
+        "Right column lists three ingredients with benefits",
+        "Text is clear, simple, and scientifically accurate without medical claims",
+        "Layout stacks vertically on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/IngredientHighlight.tsx",
+          "operation": "create",
+          "description": "Create split layout section with left side displaying generated skin texture image from frontend/public/assets/generated/skin-texture.dim_800x600.png. Right side lists benefits of Vitamin C, Kojic Acid, and Niacinamide with short scientific explanations in simple English (avoiding medical claims). Implement responsive layout that stacks vertically on mobile."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add before and after section with image comparison slider",
+      "acceptanceCriteria": [
+        "Interactive slider allows user to compare before/after images",
+        "Images show realistic skin improvement",
+        "Disclaimer 'Results may vary' is clearly visible",
+        "Slider is touch-friendly on mobile devices"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/BeforeAfter.tsx",
+          "operation": "create",
+          "description": "Create image comparison slider component showing before/after skin results. Use generated images from frontend/public/assets/generated/before-acne.dim_600x800.png and frontend/public/assets/generated/after-clear.dim_600x800.png. Implement interactive slider that allows dragging to compare images. Include disclaimer text 'Results may vary' below slider. Ensure touch-friendly interaction on mobile devices."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Build testimonials section with customer review cards",
+      "acceptanceCriteria": [
+        "Three testimonial cards displayed horizontally",
+        "Each card shows star rating (5 stars)",
+        "Review text is concise and readable",
+        "Cards use minimal design with soft shadows",
+        "Layout is responsive (stacks vertically on mobile)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Testimonials.tsx",
+          "operation": "create",
+          "description": "Create testimonials section with three customer review cards displayed horizontally. Each card includes 5-star rating display and short genuine review text. Use clean minimal card design with soft shadows and rounded corners. Implement responsive layout that stacks cards vertically on mobile."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Create blog preview section with skincare tips article cards",
+      "acceptanceCriteria": [
+        "Three blog article preview cards displayed",
+        "Each card includes article title and excerpt",
+        "Cards are clickable and link to full articles",
+        "Design matches minimal aesthetic with rounded corners",
+        "Responsive layout (3 columns desktop, 1 column mobile)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/BlogPreview.tsx",
+          "operation": "create",
+          "description": "Create blog preview section with three skincare tips article cards. Each card displays article title, excerpt, and links to blog page. Use clean minimal card design consistent with site aesthetic (rounded corners, soft shadows). Implement responsive grid (3 columns desktop, stacks to 1 column mobile)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Build footer with newsletter signup, links, and contact info",
+      "acceptanceCriteria": [
+        "Newsletter signup has email input field and submit button",
+        "Quick links include all main navigation items",
+        "Social media icons are visible and link to platforms",
+        "Contact information is clearly displayed",
+        "Payment icons (Visa, Mastercard, etc.) are shown",
+        "Footer layout is organized and responsive"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create footer component with newsletter signup form (email input and submit button), quick links section (Home, Shop, About, Blog, Contact), social media icons, contact details, and secure payment icons (Visa, Mastercard, etc.). Use brand color palette and maintain premium minimal aesthetic with organized multi-column layout. Implement responsive stacking for mobile."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Footer component at the bottom of the application layout below all page content."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Implement cart functionality with add, view, update, and checkout",
+      "acceptanceCriteria": [
+        "Add to Cart button adds product to cart state",
+        "Cart icon shows item count badge",
+        "Cart page displays all added products",
+        "Users can update product quantities or remove items",
+        "Cart persists across page navigation",
+        "Checkout button navigates to checkout flow"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/CartPage.tsx",
+          "operation": "create",
+          "description": "Create cart page that displays all cart items fetched using useCart hook. Show product details (image, name, price, quantity) for each cart item. Provide quantity update controls and remove buttons that call addToCart() and clearCart() backend functions. Display cart total. Include 'Proceed to Checkout' button that navigates to checkout page."
+        },
+        {
+          "path": "frontend/src/pages/CheckoutPage.tsx",
+          "operation": "create",
+          "description": "Create placeholder checkout page with order summary display. Show cart items, subtotal, and checkout form (name, email, address fields). Include 'Place Order' button that shows success message (no real payment processing per nonGoals)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add routes for /cart (CartPage) and /checkout (CheckoutPage) to the router configuration. Ensure cart state is accessible across all pages via useCart hook."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Ensure fully responsive design with mobile-first optimization and interactions",
+      "acceptanceCriteria": [
+        "All sections render correctly on mobile, tablet, and desktop",
+        "Mobile layout prioritizes vertical stacking and readability",
+        "Smooth scroll is enabled for anchor links",
+        "Buttons and interactive elements have visible hover states",
+        "Touch targets are appropriately sized for mobile (minimum 44px)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add global CSS rules for smooth scroll behavior (scroll-behavior: smooth). Ensure base touch target sizing meets 44px minimum. Apply mobile-first responsive breakpoints using Tailwind utilities throughout all components."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Configure Tailwind with custom breakpoints if needed and ensure mobile-first approach. Verify responsive utility classes are available for all components."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Apply consistent brand design system throughout the application",
+      "acceptanceCriteria": [
+        "Color palette is consistently applied: beige #F5EFE8, white, gold #C9A96E",
+        "Typography hierarchy uses serif for headings, sans-serif for body",
+        "All components use rounded corners and soft shadows",
+        "White space is generous and layout feels uncluttered",
+        "Overall aesthetic feels premium, clinical, and minimal"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with brand colors: beige (#F5EFE8), gold accent (#C9A96E). Configure font families: modern serif for headings (e.g., Playfair Display, Lora) and clean sans-serif for body (e.g., Inter, Open Sans). Define custom shadow utilities for soft shadows. Set border radius defaults for rounded corners."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Import brand fonts from Google Fonts or similar. Apply global typography styles: serif headings, sans-serif body text. Set default background to soft beige (#F5EFE8). Define reusable utility classes for premium minimal aesthetic (generous spacing, soft shadows, rounded corners)."
+        }
+      ]
+    }
+  ]
+}
